@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .profile {
+
+    img {
+
+    }
+  }
+
+  // hidden h1
+  .header__title {
+    @include hiddenTitle;
+  }
+
+  .heading-secondary {
+
+  }
+
+  .header__icon-wrap {
+    display: flex;
+    align-items: center;
+
+    .qrcode {
+      margin-right: 10px;
+    }
+    .search {
+
+    }
+  }
+}
