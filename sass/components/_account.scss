@@ -1,0 +1,60 @@
+// 367px 236px
+.account {
+
+  // 281px 157px
+  // number-box
+  &__inner-container {
+    position: relative;
+    width: 76.5%;
+    height: 15.7rem;
+    background-color: $color-white;
+    margin: 2.6rem 4.8rem;
+    border-radius: 1rem;
+  }
+
+  &__number-box {
+    padding: 2rem 7.3rem 1.6rem;
+    text-align: center;
+  }
+
+  &__number {
+    color: $color-grey-2;
+  }
+
+  &__text {
+    position: absolute;
+    top: 0.4rem;
+    right: 1.2rem;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1.6rem !important;
+    font-weight: 500;
+    color: $color-black;
+    text-decoration: none;
+  }
+
+  // total-box
+  &__total-box {
+    padding: 1rem 6.6rem;
+    text-align: center;
+  }
+
+  &__total-number {
+
+    & span {
+      font-size: $default-font-size;
+      margin-left: -0.4rem;
+    }
+  }
+
+  .ad {
+
+    & p {
+      text-align: center;
+    }
+    & a {
+      margin-left: 0.4rem;
+      color: $color-black;
+    }
+  }
+}

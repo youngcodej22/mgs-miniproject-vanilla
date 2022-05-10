@@ -1,8 +1,492 @@
-.temporary-container {
-  width: 375px;
-  height: 817px;
-  background-color: #c4c4c4;
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+  overflow-y: scroll;
+}
+
+.main-container:last-child {
+  background-color: #fff;
+}
+
+.main-container::-webkit-scrollbar {
+  display: none;
+}
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 37.5rem;
+  height: 81.7rem;
   border: 1px solid black;
+}
+
+.hidden {
+  display: none;
+}
+
+/**
+  sub-계좌 12px
+  광고 14px #000
+  5일동안 14px
+  생활비 18px
+  계좌 24px
+  계좌번호 14px 500 #858585
+
+  list-title 14px 700bold
+  list 18px 
+  지출 14px #b4b4b4
+  돈쓴 리스트 18px 300 lighth
+  이체 14px 500 #000
+  지출 관리 24px #000
+  닫기 14px 300light #000
+  기존금액설정 18px 500 #444 
+  금액 24px 500 #orange
+  일간서프토 18px 500 #444
+
+  chart
+  nunito sans
+  11px lineheight 16px 400
+*/
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  color: #000;
+}
+
+.heading-primary {
+  font-size: 2.4rem;
+}
+
+.heading-secondary {
+  font-size: 1.8rem;
+  color: #444444;
+}
+
+.heading-tertiary {
+  font-size: 1.4rem;
+}
+
+.heading-quaternary {
+  font-size: 1.2rem;
+}
+
+.account__inner-container {
+  position: relative;
+  width: 76.5%;
+  height: 15.7rem;
+  background-color: #fff;
+  margin: 2.6rem 4.8rem;
+  border-radius: 1rem;
+}
+
+.account__number-box {
+  padding: 2rem 7.3rem 1.6rem;
+  text-align: center;
+}
+
+.account__number {
+  color: #858585;
+}
+
+.account__text {
+  position: absolute;
+  top: 0.4rem;
+  right: 1.2rem;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1.6rem !important;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+}
+
+.account__total-box {
+  padding: 1rem 6.6rem;
+  text-align: center;
+}
+
+.account__total-number span {
+  font-size: 1.4rem;
+  margin-left: -0.4rem;
+}
+
+.account .ad p {
+  text-align: center;
+}
+
+.account .ad a {
+  margin-left: 0.4rem;
+  color: #000;
+}
+
+.btn {
+  background: inherit;
+  border: none;
+  border-radius: 0;
+  padding: 1rem 1.2rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.grab {
+  position: relative;
+  margin-top: 2.1rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 3rem 3rem 0 0;
+  overflow: hidden;
+}
+
+.grab::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 0.53rem;
+  width: 4.8rem;
+  height: 0.23rem;
+  background-color: #dadada;
+  border-radius: 0.4rem;
+}
+
+.grab .save {
+  padding-top: 1.6rem;
+  margin: 0 3.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.grab .save__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-right: 1.1rem;
+  width: 16.2rem;
+  height: 4.7rem;
+  background-color: #dadada;
+  border-radius: 0.6rem;
+}
+
+.grab .save__item-mask {
+  width: 9.7rem;
+  height: 4.7rem;
+  padding: 0.8rem 0 0.8rem 1.3rem;
+  background-color: #ff5f00;
+  border-radius: 0.6rem 0 0 0.6rem;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.3;
+}
+
+.grab .save__item-title, .grab .save__item-saving {
+  display: inline-block;
+}
+
+.grab .save__item:nth-child(2n) .save__item-mask {
+  background-color: #feb700;
+}
+
+.grab .account-details {
+  padding: 1.8rem 3.3rem 1.8rem 3.3rem;
+}
+
+.grab .account-details__recent-top, .grab .account-details__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.grab .account-details__recent-top {
+  padding: 0.8rem 0;
+}
+
+.grab .account-details__day, .grab .account-details__pay, .grab .account-details__item-title, .grab .account-details__in-out {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.grab .account-details__pay {
+  text-align: right;
+  color: #dadada;
+}
+
+.grab .account-details__list {
+  font-size: 1.8rem;
+  color: #444444;
+}
+
+.grab .account-details__item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #dadada;
+  font-weight: 400;
+}
+
+.grab .account-details__in-out {
+  font-weight: 300;
+  text-align: right;
+}
+
+.limit {
+  position: relative;
+  padding: 0.8rem 4rem;
+}
+
+.limit__box {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 0.6rem;
+  background-color: #c4c4c4;
+  border-radius: 0.3rem;
+}
+
+.limit__gauge {
+  position: absolute;
+  width: 12.8rem;
+  height: inherit;
+  background-color: #ffdb4c;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.limit__gauge::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: auto;
+  right: -4%;
+  width: 5%;
+  height: 170%;
+  background-color: #ff5f00;
+  border-radius: 0.3rem;
+  z-index: 2;
+}
+
+.limit .chart-link {
+  display: inline-block;
+  position: absolute;
+  top: 0.4rem;
+  right: 1.8rem;
+}
+
+.limit__text {
+  padding-top: 1.4rem;
+  font-size: 1.4rem;
+  color: #858585;
+  text-align: center;
+}
+
+.pattern {
+  padding: 2rem 2.7rem;
+}
+
+.popup {
+  position: relative;
+  padding-top: 3rem;
+}
+
+.popup .set-plan {
+  padding: 2rem 2.7rem;
+  margin-bottom: 3.7rem;
+}
+
+.popup .set-plan__title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.2rem;
+}
+
+.popup .set-plan__title, .popup .set-plan__amount {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.popup .set-plan__amount {
+  font-size: 2.4rem;
+  color: #ff5f00;
+  text-align: right;
+}
+
+.popup .limit {
+  padding: 0.8rem 0rem;
+}
+
+.popup .limit__box {
+  height: 1rem;
+}
+
+.popup .limit__gauge::before {
+  right: -4%;
+  width: 6%;
+  height: 300%;
+}
+
+.report {
+  padding: 2rem 2.7rem;
+  margin-bottom: 3.7rem;
+}
+
+.report__title {
+  margin-bottom: 1rem;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
 }
 
 header {
@@ -15,6 +499,11 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1.3rem 2.7rem;
+}
+
+header .profile a {
+  display: block;
 }
 
 header .header__title {
@@ -30,6 +519,10 @@ header .header__title {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+header .heading-secondary {
+  color: #000;
+}
+
 header .header__icon-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,6 +533,35 @@ header .header__icon-wrap {
 }
 
 header .header__icon-wrap .qrcode {
-  margin-right: 10px;
+  margin-right: 1.8rem;
+}
+
+.nav {
+  position: absolute;
+  bottom: 0;
+  padding: 2.1rem 3rem 2.1rem 3rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #00bdb2;
+  background: linear-gradient(163.63deg, #00BDB2 11.35%, #C4E7B8 139.96%);
+  z-index: 2;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__item {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  display: block;
+  text-align: center;
+}
+
+.nav__link {
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

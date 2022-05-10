@@ -1,0 +1,25 @@
+.nav {
+  position: absolute;
+  bottom: 0;
+  padding: 2.1rem 3rem 2.1rem 3rem;
+  width: 100%;
+  box-sizing: border-box;
+
+  background: rgb(0, 189, 178);
+  background: linear-gradient(163.63deg, #00BDB2 11.35%, #C4E7B8 139.96%);
+  z-index: 2;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    flex-basis: 25%;
+    display: block;
+    text-align: center;
+  }
+
+  &__link {
+    color: $color-white;
+  }
+}

@@ -1,6 +1,175 @@
-.temporary-container {
-  width: 375px;
-  height: 817px;
-  background-color: #c4c4c4;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  // font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// set: font-size in root
+html {
+  // 1rem = 10px; 10px/16px = 62.5%
+  font-size: 62.5%;
+}
+
+// set: the size like mobile
+.main-container {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f6f6;
+  overflow-y: scroll;
+  
+  // 여기에다가 padding-left, right 몰아서 한번에 잡을까 아니면 요소마다
+
+  // 지출 관리
+  &:last-child {
+    background-color: $color-white;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 37.5rem;
+  // 임시
+  height: 81.7rem;
   border: 1px solid black;
+}
+
+// 임시
+.hidden {
+  display: none;
 }

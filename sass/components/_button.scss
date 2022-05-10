@@ -1,0 +1,16 @@
+.btn {
+  // 초기화
+  background: inherit;
+  border: none;
+  border-radius: 0;
+  padding: 1rem 1.2rem;
+  font-size: $default-font-size;
+  cursor: pointer;
+  
+  &-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+

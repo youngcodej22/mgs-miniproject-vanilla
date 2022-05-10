@@ -1,0 +1,46 @@
+.popup {
+  position: relative;
+  padding-top: 3rem;
+
+  // 독립적으로 가능성 있기에 popup요소로 넣지 않는다.
+  .set-plan {
+    padding: 2rem 2.7rem;
+    margin-bottom: 3.7rem;
+
+    &__title-box {
+      display: flex;
+      margin-bottom: 1.2rem;
+    }
+
+    &__title,
+    &__amount {
+      flex-basis: 50%;
+    }
+
+    &__title {
+
+    }
+
+    &__amount {
+      font-size: 2.4rem;
+      color: $color-orange;
+      text-align: right;
+    }
+  }
+
+  .limit {
+    padding: 0.8rem 0rem;
+
+    &__box {
+      height: 1rem;
+    }
+
+    &__gauge {
+      &::before {
+        right: -4%;
+        width: 6%;
+        height: 300%;
+      }
+    }
+  }
+}

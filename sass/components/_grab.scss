@@ -1,0 +1,104 @@
+.grab {
+  position: relative;
+  margin-top: 2.1rem;
+  width: 100%;
+  // height: 38.3rem;
+  background-color: $color-white;
+  border-radius: 3rem 3rem 0 0;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    @include absCenter;
+    top: 0.53rem;
+    width: 4.8rem;
+    height: 0.23rem;
+    background-color: $color-grey-5;
+    border-radius: 0.4rem;
+  }
+
+  & .save {
+    padding-top: 1.6rem;
+    margin: 0 3.4rem;
+    display: flex;
+    overflow: hidden;
+
+    &__item {
+      // flex-grow flex-shrink flex-basis
+      flex: 0 0 auto;
+      margin-right: 1.1rem;
+      width: 16.2rem;
+      height: 4.7rem;
+      background-color: $color-grey-5;
+      border-radius: 0.6rem;
+
+      &-mask {
+        width: 9.7rem;
+        height: 4.7rem;
+        padding: 0.8rem 0 0.8rem 1.3rem;
+        background-color: $color-orange;
+        border-radius: 0.6rem 0 0 0.6rem;
+        color: $color-white;
+        box-sizing: border-box;
+        line-height: 1.3;
+      }
+
+      &-title,
+      &-saving {
+        display: inline-block;
+
+      }
+
+      &:nth-child(2n) {
+
+        .save__item-mask {
+          background-color: $color-yellow-dark;
+        }
+      }
+    }
+  }
+
+  & .account-details {
+    padding: 1.8rem 3.3rem 1.8rem 3.3rem;
+
+    // &__recent {}
+
+    &__recent-top,
+    &__item {
+      display: flex;
+    }
+
+    &__recent-top {
+      padding: 0.8rem 0;
+    }
+
+    &__day,
+    &__pay,
+    &__item-title,
+    &__in-out {
+      flex-basis: 50%;
+    }
+
+    &__pay {
+      text-align: right;
+      color: $color-grey-5;
+    }
+
+    &__list {
+      font-size: 1.8rem;
+      color: $color-grey-1;
+    }
+
+    &__item {
+      padding: 1rem 0;
+      border-bottom: 1px solid $color-grey-5;
+      font-weight: 400;
+    }
+    // &__item-title {}
+
+    &__in-out {
+      font-weight: 300;
+      text-align: right;
+    }
+  }
+}

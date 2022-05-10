@@ -2,11 +2,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.3rem 2.7rem;
 
   .profile {
 
-    img {
-
+    a {
+      display: block;
     }
   }
 
@@ -16,7 +17,7 @@ header {
   }
 
   .heading-secondary {
-
+    color: $color-black;
   }
 
   .header__icon-wrap {
@@ -24,7 +25,7 @@ header {
     align-items: center;
 
     .qrcode {
-      margin-right: 10px;
+      margin-right: 1.8rem;
     }
     .search {
 

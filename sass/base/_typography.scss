@@ -1,0 +1,48 @@
+/**
+  sub-계좌 12px
+  광고 14px #000
+  5일동안 14px
+  생활비 18px
+  계좌 24px
+  계좌번호 14px 500 #858585
+
+  list-title 14px 700bold
+  list 18px 
+  지출 14px #b4b4b4
+  돈쓴 리스트 18px 300 lighth
+  이체 14px 500 #000
+  지출 관리 24px #000
+  닫기 14px 300light #000
+  기존금액설정 18px 500 #444 
+  금액 24px 500 #orange
+  일간서프토 18px 500 #444
+
+  chart
+  nunito sans
+  11px lineheight 16px 400
+*/
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  // line-height: 1.7;
+  color: $color-black;
+}
+
+.heading-primary {
+  font-size: 2.4rem;
+}
+
+.heading-secondary {
+  font-size: 1.8rem;
+  color: $color-grey-1;
+  // letter-spacing: .2rem;
+}
+
+.heading-tertiary {
+  font-size: 1.4rem;
+}
+
+.heading-quaternary {
+  font-size: 1.2rem;
+}
