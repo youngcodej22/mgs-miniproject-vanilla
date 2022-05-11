@@ -21,6 +21,46 @@
 </head>
 <body>
   <div class="swiper wrap">
+    <!-- 지출 관리 -->
+    <div class="popup-container hidden">
+      <div class="popup">
+        <button class="btn btn-close">닫기 X</button>
+        <header>
+          <h1 class="heading-primary">지출 관리</h1>
+        </header>
+    
+        <div class="set-plan">
+          <div class="set-plan__title-box">
+            <h2 class="set-plan__title heading-secondary">기준금액설정</h2>
+            <span class="set-plan__amount">2,100,000원</span>
+          </div>
+          <!-- end: set-plan__title-box -->
+          <div class="limit">
+            <div class="limit__box">
+              <div class="limit__gauge"></div>
+              <div class="limit__mask"></div>
+            </div>
+          </div>
+          <!-- end: limit -->
+        </div>
+        <!-- end: set-plan -->
+    
+        <div class="report">
+          <h2 class="report__title heading-secondary">일간 리포트</h2>
+          <canvas id="myChart-bar" height="213"></canvas>
+        </div>
+        <!-- end: report -->
+    
+        <div class="pattern">
+          <h2 class="pattern__title heading-secondary">6월 지출</h2>
+          <canvas id="myChart-donut"></canvas>
+        </div>
+        <!-- end: pattern -->
+      </div>
+      <!-- end: popup -->
+    </div>
+    <!-- end: popup-container -->
+    
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- main-container-1 -->
@@ -49,11 +89,11 @@
               <span class="account__number heading-tertiary">355-673877-78773</span>
               <button class="btn account__text heading-tertiary" href="">이체</button>
             </div>
-            <div class="account__total-box">
-              <strong class="account__total-number heading-primary">
-                1,240,000
-                <span>원</span>
-              </strong>
+            <div class="account__total-box" data-title="생활비">
+              <!-- <strong class="account__total-number heading-primary"> -->
+                
+                <!-- <span>원</span> -->
+              <!-- </strong> -->
             </div>
             <div class="limit">
               <div class="limit__box">
@@ -195,11 +235,11 @@
               <span class="account__number heading-tertiary">333-111877-73443</span>
               <button class="btn account__text heading-tertiary" href="">이체</button>
             </div>
-            <div class="account__total-box">
-              <strong class="account__total-number heading-primary">
+            <div class="account__total-box" data-title="의민이 용돈">
+              <!-- <strong class="account__total-number heading-primary">
                 440,000
                 <span>원</span>
-              </strong>
+              </strong> -->
             </div>
             <div class="limit">
               <div class="limit__box">
@@ -341,11 +381,11 @@
               <span class="account__number heading-tertiary">155-22277-73443</span>
               <button class="btn account__text heading-tertiary" href="">이체</button>
             </div>
-            <div class="account__total-box">
-              <strong class="account__total-number heading-primary">
+            <div class="account__total-box" data-title="할머니 계좌">
+              <!-- <strong class="account__total-number heading-primary">
                 9,999,000
                 <span>원</span>
-              </strong>
+              </strong> -->
             </div>
             <div class="limit">
               <div class="limit__box">
@@ -461,45 +501,6 @@
       </div>
       <!-- end: main-container-3 -->
 
-      <!-- 지출 관리 -->
-      <div class="main-container last-container hidden">
-        <div class="popup">
-          <button class="btn btn-close">닫기 X</button>
-          <header>
-            <h1 class="heading-primary">지출 관리</h1>
-          </header>
-
-          <div class="set-plan">
-            <div class="set-plan__title-box">
-              <h2 class="set-plan__title heading-secondary">기준금액설정</h2>
-              <span class="set-plan__amount">2,100,000원</span>
-            </div>
-            <!-- end: set-plan__title-box -->
-            <div class="limit">
-              <div class="limit__box">
-                <div class="limit__gauge"></div>
-                <div class="limit__mask"></div>
-              </div>
-            </div>
-            <!-- end: limit -->
-          </div>
-          <!-- end: set-plan -->
-
-          <div class="report">
-            <h2 class="report__title heading-secondary">일간 리포트</h2>
-            <canvas id="myChart-bar" height="213"></canvas>
-          </div>
-          <!-- end: report -->
-          
-          <div class="pattern">
-            <h2 class="pattern__title heading-secondary">6월 지출</h2>
-            <canvas id="myChart-donut"></canvas>
-          </div>
-          <!-- end: pattern -->
-        </div>
-        <!-- end: popup -->
-      </div>
-      <!-- end: main-container last-->
     </div>
     <!-- end: swiper-wrapper -->
     <!-- nav -->
@@ -524,7 +525,6 @@
     <!-- swiper button -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-
   </div>
   <!-- end: wrap -->
 
@@ -532,8 +532,10 @@
   <!-- script -->
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/swiper.js"></script>
+  <script src="api/api.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
   <script src="js/chart.js"></script>
   <script src="js/main.js"></script>
+  <!-- <script src="js/close.js"></script> -->
 </body>
 </html>

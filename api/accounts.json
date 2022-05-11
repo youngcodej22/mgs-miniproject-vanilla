@@ -1,0 +1,308 @@
+{
+  "mainAccounts": [
+    {
+      "_id": "2222a8abe9d1c2db0355c706",
+      "index": 0,
+      "title": "생활비",
+      "deposit": 10000000
+    },
+    {
+      "_id": "2211a8abe9d1c2db0355c888",
+      "index": 1,
+      "title": "의민이 용돈",
+      "deposit": 500000
+    },
+    {
+      "_id": "3122a8abe9d1c2db0355q999",
+      "index": 2,
+      "title": "할머니 계좌",
+      "deposit": 4000000
+    }
+  ],
+  "subAccounts": [
+    {
+      "_id": "1114a8abe9d1c2db0355c706",
+      "index": 0,
+      "name": "여행 가자!",
+      "deposit": 842200
+    },
+    {
+      "_id": "1133a8abe9d1c7db0355c705",
+      "index": 1,
+      "name": "냉장고 사기",
+      "deposit": 1200000
+    }
+  ],
+  "bankList": [
+    {
+      "_id": "6274a8abe9d1c2db0355c706",
+      "index": 0,
+      "date": "2022-03-11",
+      "money": "out",
+      "type": "personal",
+      "item": "김도연",
+      "price": 30000
+    },
+    {
+      "_id": "6274a8ab75c563957d458c5f",
+      "index": 1,
+      "date": "2022-03-30",
+      "money": "out",
+      "type": "restaurant",
+      "item": "대박왕갈비",
+      "price": 50000
+    },
+    {
+      "_id": "6274a8ab8b86af7463e741ca",
+      "index": 2,
+      "date": "2022-02-13",
+      "money": "out",
+      "type": "mart",
+      "item": "홈플러스",
+      "price": 50000
+    },
+    {
+      "_id": "6274a8ab4a431a3444eddf25",
+      "index": 3,
+      "date": "2022-01-09",
+      "money": "in",
+      "type": "personal",
+      "item": "조연주",
+      "price": 150000
+    },
+    {
+      "_id": "6274a8ab3a3806673eccc784",
+      "index": 4,
+      "date": "2022-03-06",
+      "money": "out",
+      "type": "restaurant",
+      "item": "홍콩반점",
+      "price": 80000
+    },
+    {
+      "_id": "6274a8ab38f5109a8c32cbd0",
+      "index": 5,
+      "date": "2022-02-07",
+      "money": "out",
+      "type": "mart",
+      "item": "이마트",
+      "price": 40000
+    },
+    {
+      "_id": "6274a8abdb932fbb873a5cdf",
+      "index": 6,
+      "date": "2022-01-08",
+      "money": "in",
+      "type": "personal",
+      "item": "김예은",
+      "price": 30000
+    },
+    {
+      "_id": "6274a8abd7cb797f3cbe3388",
+      "index": 7,
+      "date": "2022-02-24",
+      "money": "out",
+      "type": "restaurant",
+      "item": "서가네칼국수",
+      "price": 20000
+    },
+    {
+      "_id": "6274a8abecadba91dc9cc11a",
+      "index": 8,
+      "date": "2022-02-09",
+      "money": "in",
+      "type": "personal",
+      "item": "김도연",
+      "price": 80000
+    },
+    {
+      "_id": "6274a8ab0868171c6cd981db",
+      "index": 9,
+      "date": "2022-05-09",
+      "money": "out",
+      "type": "restaurant",
+      "item": "진짜이태리파스타",
+      "price": 62000
+    },
+    {
+      "_id": "6274a8ab90ac5be3c07389a3",
+      "index": 10,
+      "date": "2022-05-09",
+      "money": "out",
+      "type": "mart",
+      "item": "토마토마트",
+      "price": 40000
+    },
+    {
+      "_id": "6274a8abcf3ece447e39d3aa",
+      "index": 11,
+      "date": "2022-05-10",
+      "money": "out",
+      "type": "cafe",
+      "item": "별다방",
+      "price": 12000
+    },
+    {
+      "_id": "6274a8aba0cb4f4c43b257ea",
+      "index": 12,
+      "date": "2022-05-10",
+      "money": "out",
+      "type": "personal",
+      "item": "조연주",
+      "price": 22000
+    },
+    {
+      "_id": "6274a8ab98835751d80b5fd5",
+      "index": 13,
+      "date": "2022-05-11",
+      "money": "out",
+      "type": "mart",
+      "item": "코코마트",
+      "price": 43000
+    },
+    {
+      "_id": "6274a8abb6640defe85e1400",
+      "index": 14,
+      "date": "2022-05-11",
+      "money": "out",
+      "type": "personal",
+      "item": "나하하",
+      "price": 300000
+    },
+    {
+      "_id": "6274a8abef13ba51e062f4f2",
+      "index": 15,
+      "date": "2022-03-25",
+      "money": "out",
+      "type": "cafe",
+      "item": "파리바게트",
+      "price": 40000
+    },
+    {
+      "_id": "6274a8abcc24688c3c70592a",
+      "index": 16,
+      "date": "2022-02-17",
+      "money": "out",
+      "type": "cafe",
+      "item": "왕밤빵집",
+      "price": 3000
+    },
+    {
+      "_id": "6274a8ab8bab51c726a1f788",
+      "index": 17,
+      "date": "2022-04-13",
+      "money": "in",
+      "type": "personal",
+      "item": "지영배",
+      "price": 120000
+    },
+    {
+      "_id": "6274a8aba53a73ca861c9a4c",
+      "index": 18,
+      "date": "2022-02-11",
+      "money": "out",
+      "type": "restaurant",
+      "item": "맛있다쌀국수",
+      "price": 35000
+    },
+    {
+      "_id": "6274a8ab1c806692d3e614b3",
+      "index": 19,
+      "date": "2022-01-03",
+      "money": "out",
+      "type": "cafe",
+      "item": "너아아나라떼",
+      "price": 9200
+    },
+    {
+      "_id": "6274a8abb105820c80c743bd",
+      "index": 20,
+      "date": "2022-02-15",
+      "money": "out",
+      "type": "cafe",
+      "item": "오늘커피내일커피",
+      "price": 21000
+    },
+    {
+      "_id": "6274a8abb534427c611eeacb",
+      "index": 21,
+      "date": "2022-02-06",
+      "money": "out",
+      "type": "mart",
+      "item": "아마트",
+      "price": 60000
+    },
+    {
+      "_id": "6274a8ab42c969acce812322",
+      "index": 22,
+      "date": "2022-04-11",
+      "money": "out",
+      "type": "personal",
+      "item": "박가나",
+      "price": 23000
+    },
+    {
+      "_id": "6274a8abaa9740c44dfd9a5c",
+      "index": 23,
+      "date": "2022-03-20",
+      "money": "in",
+      "type": "personal",
+      "item": "오하늘",
+      "price": 62000
+    },
+    {
+      "_id": "6274a8abc1e59679cbd58182",
+      "index": 24,
+      "date": "2022-01-01",
+      "money": "out",
+      "type": "mart",
+      "item": "에브리데이마트",
+      "price": 77880
+    },
+    {
+      "_id": "6274a8ab840a69760d8ae760",
+      "index": 25,
+      "date": "2022-01-21",
+      "money": "out",
+      "type": "cafe",
+      "item": "스타벅스",
+      "price": 23000
+    },
+    {
+      "_id": "6274a8ab8d89f468e4062451",
+      "index": 26,
+      "date": "2022-03-18",
+      "money": "out",
+      "type": "restaurant",
+      "item": "맥도날드",
+      "price": 34000
+    },
+    {
+      "_id": "6274a8ab8f687de1d289dbff",
+      "index": 27,
+      "date": "2022-04-23",
+      "money": "out",
+      "type": "mart",
+      "item": "이마트",
+      "price": 99000
+    },
+    {
+      "_id": "6274a8ab1d2a5137edc45884",
+      "index": 28,
+      "date": "2022-01-05",
+      "money": "out",
+      "type": "restaurant",
+      "item": "도미노피자",
+      "price": 50000
+    },
+    {
+      "_id": "6274a8ab1020e3f43160b344",
+      "index": 29,
+      "date": "2022-04-26",
+      "money": "out",
+      "type": "cafe",
+      "item": "빽다방",
+      "price": 20000
+    }
+  ]
+}

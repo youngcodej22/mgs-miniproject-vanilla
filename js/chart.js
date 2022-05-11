@@ -2,15 +2,6 @@
 const ctxBar = document.getElementById('myChart-bar').getContext('2d');
 const ctxDonut = document.getElementById('myChart-donut').getContext('2d');
 
-// const labels = [
-//     '01',
-//     '02',
-//     '03',
-//     '04',
-//     '05',
-//     '06',
-//   ];
-
 const labelsBar = elementsForLabels(9);
 // const labelsDonut = elementsForLabels(0);
 const labelsDonut = 0;
@@ -36,19 +27,6 @@ const dataBar = {
     }]
   };
 
-  const dataDonut = {
-    labels: labelsDonut,
-    datasets: [{
-      label: '6월 지출 패턴',
-      backgroundColor: [
-        'rgb(56, 201, 118)',
-        'rgb(51, 111, 222)',
-        'rgb(56, 201, 555)'
-      ],
-      data: [1,2,3,4,5,6]
-    }]
-  };
-
 const configBar = {
     type: 'bar',
     data: dataBar,
@@ -68,6 +46,21 @@ const configBar = {
           }
       }
     }
+  };
+
+  const myChartBar = new Chart(ctxBar, configBar);
+
+  const dataDonut = {
+    labels: labelsDonut,
+    datasets: [{
+      label: '6월 지출 패턴',
+      backgroundColor: [
+        'rgb(56, 201, 118)',
+        'rgb(51, 111, 222)',
+        'rgb(56, 201, 555)'
+      ],
+      data: [1,2,3,4,5,6]
+    }]
   };
 
   const configDonut = {
@@ -96,8 +89,6 @@ const configBar = {
     }
   };
 
-
-const myChartBar = new Chart(ctxBar, configBar);
 const myChartDonut = new Chart(ctxDonut, configDonut);
 
 function elementsForLabels (num) {
